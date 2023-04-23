@@ -11,7 +11,8 @@ window.onload=function(){
   const rock = document.querySelector('#rock');
   const paper = document.querySelector('#paper');
   const scissors = document.querySelector('#scissors');
-  
+  const cScore = document.querySelector('#cScore');
+  const pScore = document.querySelector('#pScore');
   
   rock.addEventListener('click', () => {
     playRound("rock", computerPlay());
@@ -34,8 +35,11 @@ window.onload=function(){
   
   //display score
   function updateScore(){
-    const score = document.querySelector('#score'); 
-    score.textContent = 'Player Score: ' + playerScore + ' Computer Score: ' + computerScore;
+   // const score = document.querySelector('#score'); 
+    //score.textContent = 'Player Score: ' + playerScore + ' Computer Score: ' + computerScore;
+    cScore.textContent = computerScore;
+    pScore.textContent = playerScore;
+
   }
   
   //Computer's rps guess

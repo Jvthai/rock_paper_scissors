@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Page Title</title>
-  <meta charset="UTF-8"/>
-</head>
-<script src="script.js"></script>
-<body>
-  <button id="rock">Rock</button>
-  <button id="paper">Paper</button>
-  <button id="scissors">Scissors</button>
-  <div id="results">
-  </div>
-  <div id="score"></div>
-</body>
+<html lang="en">
+  <head>
+    <title>RPS</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <script src="script.js"></script>
+  <body class="container">
+    <p>Let's Play: Rock, Paper, Scissors!</p>
+    <div>
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+    
+    <!-- 
+  lets build a scoreboard that tracks and updates wins/losses
+    -->
+    <div>
+      <p>Computer Score: <span id="cScore"></span></p>
+      <p>Player Score: <span id="pScore"></span></p>
+    </div>
+    
+
+    <!-- <div id="scoreTrack">
+    </div>
+    
+    <div id="score"></div> -->
+    <div id="results">
+    </div>
+  </body>
 </html> 
